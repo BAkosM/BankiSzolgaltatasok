@@ -13,6 +13,7 @@ public class Kartya extends BankiSzolgaltatas{
         if (osszeg > szamla.getAktualisEgyenleg()){
             return false;
         } else {
+            szamla.befizet(-osszeg);
             return true;
         }
     }    

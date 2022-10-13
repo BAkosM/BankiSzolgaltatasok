@@ -13,6 +13,7 @@ public class Szamla extends BankiSzolgaltatas{
         if (osszeg > this.aktualisEgyenleg){
             return false;
         } else {
+            this.aktualisEgyenleg =- osszeg;
             return true;
         }
     }

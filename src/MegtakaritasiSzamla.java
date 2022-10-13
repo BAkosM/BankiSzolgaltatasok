@@ -16,6 +16,7 @@ public class MegtakaritasiSzamla extends Szamla{
         if (osszeg > getAktualisEgyenleg()){
             return false;
         } else {
+            befizet(-osszeg);
             return true;
         }
     }

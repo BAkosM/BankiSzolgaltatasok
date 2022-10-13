@@ -12,6 +12,7 @@ public class HitelSzamla extends Szamla{
         if (osszeg > getAktualisEgyenleg()+this.hitelKeret){
             return false;
         } else {
+            befizet(-osszeg);
             return true;
         }
     }
