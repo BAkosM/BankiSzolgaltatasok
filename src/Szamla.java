@@ -17,7 +17,7 @@ public class Szamla extends BankiSzolgaltatas{
             return true;
         }
     }
-    /*public Kartya ujKartya(String kartyaszam){
-
-    }*/
+    public Kartya ujKartya(String kartyaszam){
+        return new Kartya(this.getTulajdonos(),Szamla.this,kartyaszam);
+    }
 }
